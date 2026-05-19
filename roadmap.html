@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roadmap — CyberStart</title>
+  <meta name="description" content="A step-by-step cybersecurity roadmap for beginners. Learn networking, Linux, Python, operating systems, and information security fundamentals." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION (same on all pages)
+       ============================================= -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="icon">🔐</span>
+        Cyber<span class="accent">Start</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="ai-cybersecurity.html">AI &amp; Cybersecurity</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="ai-cybersecurity.html">AI &amp; Cybersecurity</a>
+  </div>
+
+
+  <!-- =============================================
+       PAGE HEADER
+       ============================================= -->
+  <div class="page-header">
+    <div class="page-header-inner">
+      <span class="pg-label">Step-by-Step</span>
+      <h1>The Beginner Roadmap</h1>
+      <p>
+        Five foundational topics, in the order you should learn them.
+        Click any section to expand it and see what to study.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- =============================================
+       ROADMAP ACCORDION
+       Each .rm-card is one topic. script.js handles
+       the open/close toggle. Only one card can be
+       open at a time.
+       ============================================= -->
+  <section>
+    <div class="roadmap-list">
+
+      <!-- ─── TOPIC 1: NETWORK FUNDAMENTALS ─── -->
+      <!-- .rm-card gets .is-open class added by script.js (first card auto-opens) -->
+      <div class="rm-card">
+
+        <!-- Clicking this header expands the card -->
+        <div class="rm-header">
+          <div class="rm-header-left">
+            <div class="rm-num">01</div>
+            <div class="rm-title">
+              <h3>Network Fundamentals</h3>
+              <span>How data travels across the internet</span>
+            </div>
+          </div>
+          <!-- ▼ chevron rotates 180° when open -->
+          <span class="rm-chevron">▼</span>
+        </div>
+
+        <!-- This is the expandable content -->
+        <div class="rm-body">
+          <div class="rm-inner">
+
+            <!-- Plain English explanation -->
+            <p>
+              Before you can learn to attack or defend a network, you need to understand
+              how networks work. Think of networking as learning the "rules of the road"
+              before you drive — everything in cybersecurity depends on this foundation.
+            </p>
+
+            <div class="rm-label">Why It Matters for Cybersecurity</div>
+            <p class="why-text">
+              Nearly every cyberattack happens over a network. Hackers exploit protocols,
+              intercept traffic, and abuse how devices communicate. If you understand how
+              data moves, you can understand how it gets stolen — and how to stop it.
+            </p>
+
+            <!-- Beginner concepts as pill tags -->
+            <div class="rm-label">Key Concepts to Learn</div>
+            <div class="tags">
+              <span class="tag">IP Addresses</span>
+              <span class="tag">DNS</span>
+              <span class="tag">Routers &amp; Switches</span>
+              <span class="tag">TCP vs UDP</span>
+              <span class="tag">HTTP &amp; HTTPS</span>
+              <span class="tag">Ports &amp; Protocols</span>
+              <span class="tag">OSI Model (7 layers)</span>
+              <span class="tag">Packets &amp; Firewalls</span>
+            </div>
+
+            <!-- Actionable next step -->
+            <div class="next-step">
+              <span class="next-step-icon">→</span>
+              <p>
+                <strong>Next Step:</strong> Download <strong>Wireshark</strong> (free) and
+                capture real network traffic on your own computer. Seeing actual packets
+                makes these concepts click instantly. Also check out
+                <strong>Professor Messer's free CompTIA Network+ videos</strong> on YouTube.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- end rm-card -->
+
+
+      <!-- ─── TOPIC 2: OPERATING SYSTEM BASICS ─── -->
+      <div class="rm-card">
+        <div class="rm-header">
+          <div class="rm-header-left">
+            <div class="rm-num">02</div>
+            <div class="rm-title">
+              <h3>Operating System Basics</h3>
+              <span>Files, processes, memory, and permissions</span>
+            </div>
+          </div>
+          <span class="rm-chevron">▼</span>
+        </div>
+
+        <div class="rm-body">
+          <div class="rm-inner">
+
+            <p>
+              Your operating system is the software that controls everything on your
+              computer — it manages files, runs programs, and decides who is allowed to
+              do what. Understanding how it works is essential before diving into hacking
+              or security tools.
+            </p>
+
+            <div class="rm-label">Why It Matters for Cybersecurity</div>
+            <p class="why-text">
+              Malware hides in processes. Attackers exploit weak file permissions.
+              Defenders monitor system logs for suspicious activity. Whether you're
+              on Windows or Linux, OS knowledge is the skeleton key that unlocks
+              almost everything else in security.
+            </p>
+
+            <div class="rm-label">Key Concepts to Learn</div>
+            <div class="tags">
+              <span class="tag">File Systems</span>
+              <span class="tag">Processes &amp; Threads</span>
+              <span class="tag">Memory Management</span>
+              <span class="tag">User Accounts &amp; Groups</span>
+              <span class="tag">File Permissions</span>
+              <span class="tag">System Logs</span>
+              <span class="tag">Command Line Basics</span>
+              <span class="tag">Task Manager / Activity Monitor</span>
+            </div>
+
+            <div class="next-step">
+              <span class="next-step-icon">→</span>
+              <p>
+                <strong>Next Step:</strong> Spend time exploring both <strong>Windows</strong>
+                and <strong>Linux</strong>. Use the free tool <strong>VirtualBox</strong> to
+                run a Linux virtual machine on your Windows PC — you can experiment safely
+                without breaking anything.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- end rm-card -->
+
+
+      <!-- ─── TOPIC 3: LINUX ESSENTIALS ─── -->
+      <div class="rm-card">
+        <div class="rm-header">
+          <div class="rm-header-left">
+            <div class="rm-num">03</div>
+            <div class="rm-title">
+              <h3>Linux Essentials</h3>
+              <span>Terminal, permissions, Bash, and SSH</span>
+            </div>
+          </div>
+          <span class="rm-chevron">▼</span>
+        </div>
+
+        <div class="rm-body">
+          <div class="rm-inner">
+
+            <p>
+              Linux is the operating system of the internet. Most web servers run it.
+              Most hacking tools are built for it. Most cybersecurity labs and
+              competitions use it. Getting comfortable in a Linux terminal will open
+              more doors than almost any other skill on this list.
+            </p>
+
+            <div class="rm-label">Why It Matters for Cybersecurity</div>
+            <p class="why-text">
+              Security tools like Nmap, Metasploit, Burp Suite, and Wireshark work
+              best on Linux. Capture-the-flag (CTF) competitions almost always use
+              Linux environments. Penetration testers and security analysts spend their
+              days in the Linux terminal — learning it early gives you a massive advantage.
+            </p>
+
+            <div class="rm-label">Key Concepts to Learn</div>
+            <div class="tags">
+              <span class="tag">Terminal Navigation (cd, ls, pwd)</span>
+              <span class="tag">File Operations (cp, mv, rm)</span>
+              <span class="tag">File Permissions (chmod, chown)</span>
+              <span class="tag">Package Managers (apt, yum)</span>
+              <span class="tag">Bash Scripting</span>
+              <span class="tag">SSH &amp; Remote Access</span>
+              <span class="tag">Text Editors (nano, vim)</span>
+              <span class="tag">Pipes &amp; Redirects</span>
+            </div>
+
+            <div class="next-step">
+              <span class="next-step-icon">→</span>
+              <p>
+                <strong>Next Step:</strong> Try <strong>TryHackMe</strong> (free tier) —
+                it has beginner-friendly Linux rooms with a browser-based terminal so you
+                don't even need to install anything. The "Linux Fundamentals" path is
+                perfect for this stage.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- end rm-card -->
+
+
+      <!-- ─── TOPIC 4: PYTHON ESSENTIALS ─── -->
+      <div class="rm-card">
+        <div class="rm-header">
+          <div class="rm-header-left">
+            <div class="rm-num">04</div>
+            <div class="rm-title">
+              <h3>Python Essentials</h3>
+              <span>Scripting, automation, and simple tools</span>
+            </div>
+          </div>
+          <span class="rm-chevron">▼</span>
+        </div>
+
+        <div class="rm-body">
+          <div class="rm-inner">
+
+            <p>
+              Python is the most popular language in cybersecurity. It's beginner-friendly,
+              powerful, and used everywhere — from writing your own security tools to
+              automating tedious tasks. You don't need to become a software engineer,
+              but being able to read and write simple Python scripts is a superpower.
+            </p>
+
+            <div class="rm-label">Why It Matters for Cybersecurity</div>
+            <p class="why-text">
+              Security professionals use Python to automate scans, parse log files,
+              interact with APIs, and build quick proof-of-concept exploits. Even
+              understanding existing Python tools (like many in Kali Linux) requires
+              knowing the basics. It's the language that ties everything together.
+            </p>
+
+            <div class="rm-label">Key Concepts to Learn</div>
+            <div class="tags">
+              <span class="tag">Variables &amp; Data Types</span>
+              <span class="tag">If/Else Logic</span>
+              <span class="tag">Loops (for, while)</span>
+              <span class="tag">Functions</span>
+              <span class="tag">Reading &amp; Writing Files</span>
+              <span class="tag">Lists &amp; Dictionaries</span>
+              <span class="tag">Importing Libraries</span>
+              <span class="tag">Simple Automation Scripts</span>
+            </div>
+
+            <div class="next-step">
+              <span class="next-step-icon">→</span>
+              <p>
+                <strong>Next Step:</strong> Write a simple <strong>port scanner in Python</strong>
+                using the <code style="background:rgba(0,212,255,0.1);color:var(--blue);padding:0 4px;border-radius:3px;">socket</code>
+                library. It's a classic beginner project that teaches you networking
+                <em>and</em> coding at the same time. Search "Python port scanner tutorial"
+                and build your own version.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- end rm-card -->
+
+
+      <!-- ─── TOPIC 5: INFORMATION SECURITY FUNDAMENTALS ─── -->
+      <div class="rm-card">
+        <div class="rm-header">
+          <div class="rm-header-left">
+            <div class="rm-num">05</div>
+            <div class="rm-title">
+              <h3>Information Security Fundamentals</h3>
+              <span>CIA triad, encryption, attacks, and best practices</span>
+            </div>
+          </div>
+          <span class="rm-chevron">▼</span>
+        </div>
+
+        <div class="rm-body">
+          <div class="rm-inner">
+
+            <p>
+              Before you can hack or defend anything, you need to understand what
+              "security" actually means. This section covers the core principles that
+              every cybersecurity professional — from help desk to CISO — should know
+              by heart.
+            </p>
+
+            <div class="rm-label">Why It Matters for Cybersecurity</div>
+            <p class="why-text">
+              Security isn't just a technical problem — it's a mindset. Understanding
+              why attacks happen, what attackers want, and how defenses work gives
+              you the mental model to think like both an attacker and a defender.
+              This knowledge makes every other topic on this roadmap make more sense.
+            </p>
+
+            <div class="rm-label">Key Concepts to Learn</div>
+            <div class="tags">
+              <span class="tag">CIA Triad (Confidentiality, Integrity, Availability)</span>
+              <span class="tag">Authentication vs Authorization</span>
+              <span class="tag">Encryption Basics</span>
+              <span class="tag">Hashing &amp; Passwords</span>
+              <span class="tag">Common Attacks (phishing, MITM, DoS)</span>
+              <span class="tag">Social Engineering</span>
+              <span class="tag">Security Best Practices</span>
+              <span class="tag">Threat vs Vulnerability vs Risk</span>
+            </div>
+
+            <div class="next-step">
+              <span class="next-step-icon">→</span>
+              <p>
+                <strong>Next Step:</strong> Read about a <strong>real-world data breach</strong>
+                (the Target 2013 breach or the LinkedIn password leak are great starting points).
+                Apply the CIA triad to understand what went wrong. Then consider studying for
+                the free <strong>CompTIA Security+ certification</strong> — it covers all of
+                these fundamentals in depth.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- end rm-card -->
+
+    </div><!-- end roadmap-list -->
+  </section>
+
+
+  <!-- =============================================
+       WHAT'S NEXT AFTER THE ROADMAP
+       A short motivational section with next options
+       ============================================= -->
+  <section class="bg-alt">
+    <div class="container">
+
+      <div class="sec-header">
+        <span class="sec-label">After the Basics</span>
+        <h2>Where Can You Go Next?</h2>
+        <p>
+          Once you've worked through these five areas, you'll have a solid foundation.
+          Here are some directions beginners commonly explore after this roadmap.
+        </p>
+      </div>
+
+      <div class="grid-3">
+
+        <div class="card">
+          <span class="card-icon">🏴‍☠️</span>
+          <h3>Ethical Hacking / Pen Testing</h3>
+          <p>
+            Learn to think like an attacker. Platforms like <strong>TryHackMe</strong>
+            and <strong>HackTheBox</strong> offer hands-on hacking practice in safe,
+            legal environments.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="card-icon">🛡️</span>
+          <h3>Blue Team / Defense</h3>
+          <p>
+            Focus on monitoring, detection, and incident response. Look into
+            <strong>SIEM tools</strong>, log analysis, and the role of a Security
+            Operations Center (SOC) analyst.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="card-icon">📜</span>
+          <h3>Certifications</h3>
+          <p>
+            Entry-level certs like <strong>CompTIA Security+</strong>,
+            <strong>CompTIA Network+</strong>, or <strong>Google Cybersecurity Certificate</strong>
+            are great next steps that employers recognize.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       FOOTER (same on all pages)
+       ============================================= -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="icon">🔐</span>
+        Cyber<span class="accent">Start</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="ai-cybersecurity.html">AI &amp; Cybersecurity</a>
+      </nav>
+      <p class="footer-copy">Built for beginners, by a beginner. Free to use and share.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

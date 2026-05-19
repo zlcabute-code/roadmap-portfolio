@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberStart — Cybersecurity Roadmap for Beginners</title>
+  <meta name="description" content="A free, beginner-friendly cybersecurity roadmap for high school and college students. Learn what to study first, why it matters, and how to get started." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+       Same nav appears on all three pages.
+       To change a link, update it here AND in
+       roadmap.html and ai-cybersecurity.html.
+       ============================================= -->
+  <nav>
+    <div class="nav-inner">
+      <!-- Logo / site name -->
+      <a href="index.html" class="nav-logo">
+        <span class="icon">🔐</span>
+        Cyber<span class="accent">Start</span>
+      </a>
+
+      <!-- Desktop navigation links -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="ai-cybersecurity.html">AI &amp; Cybersecurity</a></li>
+      </ul>
+
+      <!-- Hamburger button — only visible on mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile dropdown menu (toggled by script.js) -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="ai-cybersecurity.html">AI &amp; Cybersecurity</a>
+  </div>
+
+
+  <!-- =============================================
+       HERO SECTION
+       First thing a visitor sees. Keep the
+       headline short and the CTA button obvious.
+       ============================================= -->
+  <section class="hero">
+    <div class="hero-content">
+
+      <!-- Small badge above the heading -->
+      <div class="hero-badge">⚡ Free &amp; Beginner Friendly</div>
+
+      <!-- Main heading — .hl adds the blue color to a word -->
+      <h1>Your <span class="hl">Cybersecurity</span><br />Journey Starts Here</h1>
+
+      <!-- Subtitle — keep it reassuring, not overwhelming -->
+      <p class="subtitle">
+        Feeling lost about where to begin? This roadmap breaks down cybersecurity
+        into clear, beginner-friendly steps — no experience required.
+      </p>
+
+      <!-- Call-to-action buttons -->
+      <div class="hero-btns">
+        <a href="roadmap.html" class="btn btn-primary">View the Roadmap →</a>
+        <a href="ai-cybersecurity.html" class="btn btn-outline">AI &amp; Cybersecurity</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       WHY THIS ROADMAP EXISTS
+       Three simple reasons this resource was made.
+       ============================================= -->
+  <section class="bg-alt">
+    <div class="container">
+
+      <div class="sec-header">
+        <span class="sec-label">The Problem</span>
+        <h2>Start Without the Overwhelm</h2>
+        <p>
+          Cybersecurity has thousands of topics, courses, and YouTube videos.
+          This roadmap cuts through the noise so you always know what to do next.
+        </p>
+      </div>
+
+      <!-- Three "why" cards in a row (stacks on mobile) -->
+      <div class="grid-3">
+
+        <div class="card">
+          <span class="card-icon">🧭</span>
+          <h3>One Clear Direction</h3>
+          <p>
+            Instead of jumping between random tutorials, follow a logical sequence
+            that builds your skills step by step — like levels in a game.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="card-icon">📖</span>
+          <h3>Beginner Friendly</h3>
+          <p>
+            Every topic is explained in plain English. No jargon dumps,
+            no assumed knowledge. If you've never opened a terminal, you're in
+            the right place.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="card-icon">🎯</span>
+          <h3>Focused on Foundations</h3>
+          <p>
+            We skip the hype and focus on the core skills every cybersecurity
+            professional actually needs, no matter which specialization
+            you eventually choose.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       WHAT YOU'LL LEARN
+       Preview of the 5 roadmap topics. Each card
+       links to the roadmap page.
+       ============================================= -->
+  <section>
+    <div class="container">
+
+      <div class="sec-header">
+        <span class="sec-label">The Roadmap</span>
+        <h2>What You'll Learn</h2>
+        <p>
+          Five foundational areas that every beginner should cover before
+          diving into specialized topics like ethical hacking or cloud security.
+        </p>
+      </div>
+
+      <!-- Five topic preview cards — auto-fit grid -->
+      <div class="grid-auto">
+
+        <a href="roadmap.html" class="topic-card">
+          <div class="topic-num">01 — Network Fundamentals</div>
+          <h3>How the Internet Works</h3>
+          <p>IP addresses, DNS, routers, TCP/UDP, HTTP — the plumbing of the internet.</p>
+        </a>
+
+        <a href="roadmap.html" class="topic-card">
+          <div class="topic-num">02 — Operating System Basics</div>
+          <h3>Files, Processes &amp; Permissions</h3>
+          <p>Understand how your computer manages programs and who is allowed to do what.</p>
+        </a>
+
+        <a href="roadmap.html" class="topic-card">
+          <div class="topic-num">03 — Linux Essentials</div>
+          <h3>The Hacker's Operating System</h3>
+          <p>Navigate the terminal, manage files and permissions, and write basic scripts.</p>
+        </a>
+
+        <a href="roadmap.html" class="topic-card">
+          <div class="topic-num">04 — Python Essentials</div>
+          <h3>Automate Everything</h3>
+          <p>Write simple scripts to automate tasks — the skill that separates good from great.</p>
+        </a>
+
+        <a href="roadmap.html" class="topic-card">
+          <div class="topic-num">05 — Info Security Fundamentals</div>
+          <h3>CIA Triad &amp; Common Attacks</h3>
+          <p>Understand what security actually means before you try to break or defend anything.</p>
+        </a>
+
+      </div>
+
+      <!-- Link to the full roadmap -->
+      <div style="text-align:center; margin-top: 2.5rem;">
+        <a href="roadmap.html" class="btn btn-outline">Explore the Full Roadmap →</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       ABOUT THE AUTHOR
+       Replace the placeholder text below with your
+       own name, title, and bio.
+       ============================================= -->
+  <section class="bg-alt">
+    <div class="container">
+
+      <div class="sec-header">
+        <span class="sec-label">About</span>
+        <h2>Who Made This?</h2>
+      </div>
+
+      <div class="about-wrap">
+        <div class="about-card">
+
+          <!-- Replace the emoji with a real photo if you want:
+               <img src="photo.jpg" alt="Your name" style="width:70px;height:70px;border-radius:50%;" /> -->
+          <div class="about-avatar">👤</div>
+
+          <div class="about-info">
+            <!-- Replace "Your Name" with your actual name -->
+            <h3>Your Name Here</h3>
+            <!-- Replace the role below with your own -->
+            <span class="about-role">Cybersecurity Student &amp; Roadmap Author</span>
+            <!-- Replace this paragraph with your own bio -->
+            <p>
+              Hi! I'm a student interested in cybersecurity who felt completely overwhelmed
+              when I first started. I built this roadmap to share what I wish I'd known
+              from day one — a clear, no-fluff guide that actually makes sense for beginners.
+              Feel free to replace this bio with your own story.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       FOOTER
+       Same footer appears on all three pages.
+       ============================================= -->
+  <footer>
+    <div class="footer-inner">
+
+      <div class="footer-logo">
+        <span class="icon">🔐</span>
+        Cyber<span class="accent">Start</span>
+      </div>
+
+      <!-- Footer navigation -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="ai-cybersecurity.html">AI &amp; Cybersecurity</a>
+      </nav>
+
+      <p class="footer-copy">Built for beginners, by a beginner. Free to use and share.</p>
+
+    </div>
+  </footer>
+
+  <!-- Load JavaScript last so the HTML is ready before scripts run -->
+  <script src="script.js"></script>
+
+</body>
+</html>
