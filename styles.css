@@ -881,6 +881,13 @@ section:first-of-type,
   border-bottom-color: var(--border);
 }
 
+.page-header::before {
+  display: block;
+  background:
+    radial-gradient(ellipse at 50% 110%, rgba(255, 59, 59, 0.22) 0%, transparent 62%),
+    radial-gradient(ellipse at 15% 10%, rgba(255, 255, 255, 0.06) 0%, transparent 42%);
+}
+
 .page-header-inner {
   max-width: 760px;
 }
