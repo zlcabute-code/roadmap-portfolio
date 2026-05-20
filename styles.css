@@ -851,8 +851,7 @@ section:first-of-type,
 }
 
 .hero::before,
-.hero::after,
-.page-header::before {
+.hero::after {
   display: none;
 }
 
