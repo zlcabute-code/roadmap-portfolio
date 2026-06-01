@@ -370,6 +370,9 @@ section    { padding: 5rem 1.5rem; }
 .grid-3   { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.4rem; }
 .grid-2   { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.4rem; }
 .grid-auto{ display: grid; grid-template-columns: repeat(auto-fit, minmax(210px,1fr)); gap: 1.4rem; }
+.grid-balanced { display: grid; grid-template-columns: repeat(6,1fr); gap: 1.4rem; }
+.grid-balanced > * { grid-column: span 2; }
+.grid-balanced > :nth-last-child(2):nth-child(3n + 1) { grid-column: 2 / span 2; }
 
 /* ============================================================
    TOPIC PREVIEW CARDS  (index.html "What You'll Learn")
@@ -674,6 +677,9 @@ footer {
 /* Tablet */
 @media (max-width: 900px) {
   .grid-3   { grid-template-columns: repeat(2,1fr); }
+  .grid-balanced { grid-template-columns: repeat(2,1fr); }
+  .grid-balanced > *,
+  .grid-balanced > :nth-last-child(2):nth-child(3n + 1) { grid-column: auto; }
   .ai-intro { grid-template-columns: 1fr; gap: 2rem; }
 }
 
@@ -684,7 +690,7 @@ footer {
   .hamburger  { display: flex; }
 
   /* Single-column grids */
-  .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  .grid-3, .grid-2, .grid-balanced { grid-template-columns: 1fr; }
 
   section { padding: 3.5rem 1.25rem; }
 
