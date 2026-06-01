@@ -525,6 +525,7 @@ section    { padding: 5rem 1.5rem; }
   border-radius: 100px;
   font-size: 0.78rem;
   font-weight: 500;
+  text-decoration: none;
 }
 
 /* Next Step box inside accordion */
@@ -541,6 +542,8 @@ section    { padding: 5rem 1.5rem; }
 .next-step-icon { font-size: 1rem; flex-shrink: 0; line-height: 1.6; }
 .next-step p    { color: var(--muted); font-size: 0.86rem; line-height: 1.6; margin: 0; }
 .next-step strong { color: var(--green); }
+.next-step a { color: inherit; text-decoration: underline; text-decoration-color: transparent; transition: text-decoration-color 0.2s; }
+.next-step a:hover { text-decoration-color: currentColor; }
 
 /* ============================================================
    AI PAGE — BENEFIT & RISK CARDS
